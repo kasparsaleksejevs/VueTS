@@ -1,0 +1,26 @@
+<template>
+    <div>
+        <h1>Products!</h1>
+
+        <table v-if="products.length" class="table">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr v-for="item in products">
+                    <td>{{ item.id }}</td>
+                    <td>{{ item.name }}</td>
+                    <td>{{ item.price }}</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p v-else><em>Loading...</em></p>
+    </div>
+</template>
+
+<script src="./products.ts"></script>
