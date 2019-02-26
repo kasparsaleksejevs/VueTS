@@ -1,6 +1,5 @@
 const path = require('path');
 const webpack = require('webpack');
-//const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 
@@ -43,7 +42,7 @@ module.exports = (env) => {
         plugins: [
             new MiniCssExtractPlugin({
                 filename: 'vendor.css',
-            }), ,
+            }), 
             new webpack.ProvidePlugin({ $: 'jquery', jQuery: 'jquery' }), // Maps these identifiers to the jQuery package (because Bootstrap expects it to be a global variable)
             new webpack.DefinePlugin({
                 'process.env.NODE_ENV': isDevBuild ? '"development"' : '"production"'

@@ -1,6 +1,5 @@
 const path = require('path');
 const webpack = require('webpack');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const bundleOutputDir = './wwwroot/dist';
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
@@ -61,7 +60,6 @@ module.exports = (env) => {
         ] : [
                 // Plugins that apply in production builds only
                 new UglifyJsPlugin(),
-                new ExtractTextPlugin('site.css')
             ])
     }];
 };

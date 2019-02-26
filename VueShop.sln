@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.329
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "vuets", "vuets.csproj", "{B37E2766-3BB9-4474-826A-886058A1979A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VueShop", "VueShop.csproj", "{B37E2766-3BB9-4474-826A-886058A1979A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
